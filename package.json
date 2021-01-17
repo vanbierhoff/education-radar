@@ -1,0 +1,49 @@
+{
+  "name": "draws",
+  "version": "1.0.0",
+  "description": "draws on ts",
+  "main": "index.ts",
+  "scripts": {
+    "serv": "webpack serve --mode development --hot",
+    "dev": "webpack --mode development ",
+    "build": "webpack --mode=production",
+    "precommit": "lint-staged"
+  },
+  "author": "hoffs",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "mini-css-extract-plugin": "^1.3.3",
+    "prettier": "^2.2.1",
+    "sass-loader": "^10.1.1",
+    "ts-loader": "^8.0.14",
+    "typescript": "^4.1.3",
+    "webpack": "^5.12.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1",
+    "webpack-merge": "^5.7.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --relative"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "eslint-plugin-prettier": "^3.3.0",
+    "rxjs": "^6.6.3"
+  }
+}

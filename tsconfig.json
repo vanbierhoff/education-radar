@@ -1,0 +1,33 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"outDir": "./dist/out-tsc",
+		"sourceMap": true,
+		"removeComments": true,
+		"noEmitOnError": true,
+
+		/* Strict setting */
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictPropertyInitialization": false,
+		"strictBindCallApply": true,
+
+		/* Additional Checks  */
+		"noUnusedLocals": false,
+		"noUnusedParameters": true /* _?:type */,
+		"noImplicitReturns": true,
+
+		"declaration": false,
+		"downlevelIteration": true,
+		"experimentalDecorators": true,
+		"moduleResolution": "node",
+		"importHelpers": true,
+		"target": "es2015",
+		"module": "es2020",
+		"lib": ["es2018", "dom", "esnext"],
+	}
+}
+
